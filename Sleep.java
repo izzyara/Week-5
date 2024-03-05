@@ -13,6 +13,7 @@ public class Sleep
     System.out.println("Enter your birthdate: ");
     Scanner input = new Scanner(System.in);
     System.out.print("Year: ");
+    birthYear = input.nextInt();
     System.out.print("Month: ");
     birthMonth = input.nextInt();
     System.out.print("Day: ");
