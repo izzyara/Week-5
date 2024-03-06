@@ -29,7 +29,18 @@ public class Sleep
     input.close();
 
     int liveDays;
+    int liveYears;
+    int liveMonths;
 
-    liveDays = 365*(year - birthYear) + 30*()
+    liveYears = (year-birthYear);
+    liveMonths = (12-birthMonth) + (12*liveYears) + month;
+    liveDays = 30*liveMonths;
+
+    System.out.println("You have been alive for " + liveDays + " days");
+
+    int sleepHours = (24*liveDays)/3;
+
+    System.out.println("You have slept for " + sleepHours + " hours");
+
     }
 }
